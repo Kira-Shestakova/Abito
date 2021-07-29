@@ -30,10 +30,14 @@ body {
   font-size: 14px;
   color: #0a143a;
 }
-.header {
+.container {
   max-width: 1146px;
   margin: auto;
+}
+.header {
   padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 12px;
 }
 .navbar {
   display: flex;
@@ -97,4 +101,105 @@ body {
 }
 .search-button-text {
   margin-left: 5px;
+}
+.page-content {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  grid-column-gap: 30px;
+}
+.page-title {
+  margin-bottom: 25px;
+}
+.card-image {
+  border-radius: 10px;
+  width: 264px;
+  height: 178px;
+  object-fit: cover;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* убираем jc: space-between (а также раскоментируем настройки ниже) когда нужно чтобы в последнем ряду было не три, а две карточки */
+}
+.card {
+  margin-bottom: 20px;
+}
+/* .card:not(:nth-child(3n)) {
+  margin-bottom: 20px;
+} */
+.card-title {
+  font-size: 16px;
+  line-height: 19px;
+  color: #256eeb;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.like {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-left: 15px;
+}
+.card-link {
+  text-decoration: none;
+}
+.card-price {
+  display: block;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+.card-text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #c4c4c4;
+  margin-bottom: 4px;
+}
+.sidebar .page-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+}
+.service {
+  margin-bottom: 25px;
+}
+.service-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+.service-text {
+  font-size: 14px;
+  line-height: 16px;
+  max-width: 231px;
+}
+.line {
+  color: #e5e5e5;
+  margin-top: 37px;
+  margin-bottom: 18px;
+}
+.footer-text {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  color: #c4c4c4;
+  margin-bottom: 5px;
+}
+.footer-menu {
+  list-style: none;
+  margin-bottom: 16px;
+}
+.footer-link {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 5px;
 }
